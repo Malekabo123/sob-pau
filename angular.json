@@ -5,7 +5,14 @@
   "projects": {
     "sob-pau": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "type": "component"
+        },
+        "@schematics/angular:service": {
+          "type": "service"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -16,6 +23,8 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
+              "src/favicon.ico",
+              "src/assets",
               {
                 "glob": "**/*",
                 "input": "public"
