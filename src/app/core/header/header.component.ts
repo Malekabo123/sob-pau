@@ -8,7 +8,7 @@ import { NgClickOutsideDirective } from 'ng-click-outside2';
   selector: 'app-header',
   imports: [CommonModule, RouterLink, NgClickOutsideDirective],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css',
+  styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
   @Input() navLight: any;

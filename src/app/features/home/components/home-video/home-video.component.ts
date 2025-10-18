@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-home-video',
   imports: [],
   templateUrl: './home-video.component.html',
-  styleUrl: './home-video.component.css'
+  styleUrl: './home-video.component.scss'
 })
 export class HomeVideoComponent {
 

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-clubs',
   imports: [],
   templateUrl: './clubs.component.html',
-  styleUrl: './clubs.component.css'
+  styleUrl: './clubs.component.scss'
 })
 export class ClubsComponent {
 

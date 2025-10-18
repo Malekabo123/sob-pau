@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-home-faq',
   imports: [],
   templateUrl: './home-faq.component.html',
-  styleUrl: './home-faq.component.css'
+  styleUrl: './home-faq.component.scss'
 })
 export class HomeFaqComponent {
 

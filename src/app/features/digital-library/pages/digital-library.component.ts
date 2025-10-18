@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-digital-library',
   imports: [],
   templateUrl: './digital-library.component.html',
-  styleUrl: './digital-library.component.css'
+  styleUrl: './digital-library.component.scss'
 })
 export class DigitalLibraryComponent {
 

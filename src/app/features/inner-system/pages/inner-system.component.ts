@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-inner-system',
   imports: [],
   templateUrl: './inner-system.component.html',
-  styleUrl: './inner-system.component.css'
+  styleUrl: './inner-system.component.scss'
 })
 export class InnerSystemComponent {
 

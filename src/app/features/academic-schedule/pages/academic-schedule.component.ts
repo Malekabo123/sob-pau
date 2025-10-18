@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-academic-schedule',
   imports: [],
   templateUrl: './academic-schedule.component.html',
-  styleUrl: './academic-schedule.component.css'
+  styleUrl: './academic-schedule.component.scss'
 })
 export class AcademicScheduleComponent {
 

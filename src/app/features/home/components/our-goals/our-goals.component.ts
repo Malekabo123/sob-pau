@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-our-goals',
   imports: [],
   templateUrl: './our-goals.component.html',
-  styleUrl: './our-goals.component.css'
+  styleUrl: './our-goals.component.scss'
 })
 export class OurGoalsComponent {
 

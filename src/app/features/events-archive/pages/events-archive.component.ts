@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-events-archive',
   imports: [],
   templateUrl: './events-archive.component.html',
-  styleUrl: './events-archive.component.css'
+  styleUrl: './events-archive.component.scss'
 })
 export class EventsArchiveComponent {
 
