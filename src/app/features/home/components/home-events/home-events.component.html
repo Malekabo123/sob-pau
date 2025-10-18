@@ -1,1 +1,41 @@
-<p>home-events works!</p>
+<section class="relative md:py-24 py-16">
+  <div class="container">
+    <div class="grid md:grid-cols-12 grid-cols-1 pb-8 items-end">
+      <div class="lg:col-span-8 md:col-span-6">
+        <h3 class="mb-4 md:text-[26px] md:leading-normal text-2xl leading-normal font-semibold">
+          Trending Services
+        </h3>
+        <p class="text-slate-400 max-w-xl">
+          Search all the open positions on the web. Get your own personalized salary estimate. Read
+          reviews on over 30000+ companies worldwide.
+        </p>
+      </div>
+    </div>
+    <!--end grid-->
+
+    <div class="grid grid-cols-1 mt-7 relative">
+      <div class="tiny-five-item">
+        @for (item of servicesData; track $index) {
+          <div class="tiny-slide">
+            <div
+              class="group relative overflow-hidden rounded-md shadow-sm shadow-gray-200 dark:shadow-gray-700 transition duration-500 m-1"
+            >
+              <img [src]="item.image" alt="" />
+              <div class="absolute inset-0 bg-slate-900/50"></div>
+
+              <div class="absolute bottom-0 p-4">
+                <div
+                  (click)="$event.preventDefault()"
+                  class="text-lg font-semibold text-white hover:text-primary transition-all duration-500"
+                >
+                  {{ item.title }}
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+  <!--end container-->
+</section>
