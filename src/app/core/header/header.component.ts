@@ -1,12 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, OnInit, HostListener, Input } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import * as feather from 'feather-icons';
-import { NgClickOutsideDirective } from 'ng-click-outside2';
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule, RouterLink, NgClickOutsideDirective],
+  imports: [CommonModule, RouterLink],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
@@ -36,7 +35,11 @@ export class HeaderComponent {
   }
 
   openSubManu(item: string) {
-    this.subManu = item;
+    if (this.subManu === item) {
+      this.subManu = '';
+    } else {
+      this.subManu = item;
+    }
   }
 
   showToggleMenu: boolean = false;
