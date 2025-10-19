@@ -57,4 +57,15 @@ export class HeaderComponent {
   closeOutSideClick(e: any) {
     this.user = false;
   }
+
+  changeMode(e: any) {
+    e.preventDefault();
+
+    const htmlTag = document.documentElement;
+    if (htmlTag.className.includes('dark')) {
+      htmlTag.className = 'light';
+    } else {
+      htmlTag.className = 'dark';
+    }
+  }
 }
